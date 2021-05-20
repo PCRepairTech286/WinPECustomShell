@@ -4,9 +4,13 @@
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
 	switch (msg) {
-	case WM_CLOSE:
-		MessageBox(hwnd, cannotCloseMsg, szAppTitle, MB_ICONEXCLAMATION + MB_OK);
-		return 0;
+	case WM_SYSCOMMAND:
+		if (wParam == SC_CLOSE)
+		{
+			MessageBox(hwnd, cannotCloseMsg, szAppTitle, MB_ICONEXCLAMATION + MB_OK);
+			return(TRUE);
+		}
+		break;
 	case WM_COMMAND:
 		switch (LOWORD(wParam))
 		{
@@ -55,20 +59,22 @@ BOOL Initialization(HINSTANCE hInst, SIZE size)
 	wndClass.hbrBackground = CreatePatternBrush(LoadBitmap(hInst, MAKEINTRESOURCE(IDB_BACKGROUND)));
 	wndClass.hIcon = LoadIcon(hInst, MAKEINTRESOURCE(IDI_FILEMANAGER));
 	wndClass.lpszMenuName = MAKEINTRESOURCE(IDR_MAINMENU);
-	wndClass.style = CS_DBLCLKS;
+	wndClass.style = CS_DBLCLKS | CS_NOCLOSE;
 
 	if (RegisterClassEx(&wndClass) == NULL) return FALSE;
 
 	hWnd = CreateWindow(
 		className,
 		szAppTitle,
-		WS_OVERLAPPEDWINDOW,
+		WS_OVERLAPPED,
 		100, 100,
 		size.cx, size.cy,
 		NULL,
 		NULL,
 		hInst,
 		NULL);
+
+	SetWindowLong(hWnd, GWL_STYLE, 0);
 
 	if (hWnd == NULL) return FALSE;
 
