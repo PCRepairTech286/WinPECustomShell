@@ -36,8 +36,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,3,0,1
- PRODUCTVERSION 1,3,0,1
+ FILEVERSION 1,5,0,1
+ PRODUCTVERSION 1,5,0,1
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -54,12 +54,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "PCRepairTech"
             VALUE "FileDescription", "Windows Preinstallation Environment Custom Shell"
-            VALUE "FileVersion", "1.3.0.1"
+            VALUE "FileVersion", "1.5.0.1"
             VALUE "InternalName", "wpeshell.exe"
             VALUE "LegalCopyright", "Copyright © 2021 PCRepairTech. All rights reserved."
             VALUE "OriginalFilename", "wpeshell.exe"
             VALUE "ProductName", "For use on WinPE. Custom Shell developed by PCRepairTech, Israel"
-            VALUE "ProductVersion", "1.3.0.1"
+            VALUE "ProductVersion", "1.5.0.1"
         END
     END
     BLOCK "VarFileInfo"
@@ -86,7 +86,7 @@ IDI_FILEMANAGER         ICON                    "C:\\icon.ico"
 
 IDR_MAINMENU MENU
 BEGIN
-    POPUP "File"
+    POPUP "Start"
     BEGIN
         MENUITEM "Open 7-Zip",                  ID_7ZIP
         MENUITEM "Open Command Prompt",         ID_CMDOPEN
@@ -118,7 +118,7 @@ BEGIN
     APPTITLE                "Windows PE Custom Shell"
     CANNOTCLOSE             "Cannot exit main program while in WinPE!"
     RESTARTCONFIRMATION     "Are you sure you want to restart your computer?"
-    ABOUTTEXT               "Windows PE Custom Shell, Version 1.0\r\n© 2021 PCRepairTech. All rights reserved."
+    ABOUTTEXT               "Windows PE Custom Shell, Version 1.5\r\n© 2021 PCRepairTech. All rights reserved."
     ABOUTTITLE              "About Windows PE Custom Shell"
 END
 
