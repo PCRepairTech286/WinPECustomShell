@@ -26,16 +26,16 @@ LANGUAGE LANG_RUSSIAN, SUBLANG_NEUTRAL
 
 IDR_MAINMENU MENU
 BEGIN
-    POPUP "начало"
+    POPUP "Г­Г Г·Г Г«Г®"
     BEGIN
-        MENUITEM "открытый 7-Zip",              ID_7ZIP
-        MENUITEM "Открытый командный запрос",   ID_CMDOPEN
+        MENUITEM "Г®ГІГЄГ°Г»ГІГ»Г© 7-Zip",              ID_7ZIP
+        MENUITEM "ГЋГІГЄГ°Г»ГІГ»Г© ГЄГ®Г¬Г Г­Г¤Г­Г»Г© Г§Г ГЇГ°Г®Г±",   ID_CMDOPEN
         MENUITEM SEPARATOR
-        MENUITEM "перезапуск",                  ID_RESTART
+        MENUITEM "ГЇГҐГ°ГҐГ§Г ГЇГіГ±ГЄ",                  ID_RESTART
     END
-    POPUP "Справка"
+    POPUP "Г‘ГЇГ°Г ГўГЄГ "
     BEGIN
-        MENUITEM "около",                       ID_ABOUT
+        MENUITEM "Г®ГЄГ®Г«Г®",                       ID_ABOUT
     END
 END
 
@@ -47,11 +47,11 @@ END
 
 STRINGTABLE
 BEGIN
-    APPTITLE                "Windows PE Пользовательские оболочки"
-    CANNOTCLOSE             "Не может выйти из основной программы в то время как в WinPE!"
-    RESTARTCONFIRMATION     "Вы уверены, что хотите перезапустить компьютер?"
-    ABOUTTEXT               "Windows PE Пользовательские оболочки, Версия 2.0\r\n© 2021 PCRepairTech. Все права зарезервированы."
-    ABOUTTITLE              "О Windows PE Пользовательские оболочки"
+    APPTITLE                "Windows PE ГЏГ®Г«ГјГ§Г®ГўГ ГІГҐГ«ГјГ±ГЄГЁГҐ Г®ГЎГ®Г«Г®Г·ГЄГЁ"
+    CANNOTCLOSE             "ГЌГҐ Г¬Г®Г¦ГҐГІ ГўГ»Г©ГІГЁ ГЁГ§ Г®Г±Г­Г®ГўГ­Г®Г© ГЇГ°Г®ГЈГ°Г Г¬Г¬Г» Гў ГІГ® ГўГ°ГҐГ¬Гї ГЄГ ГЄ Гў WinPE!"
+    RESTARTCONFIRMATION     "Г‚Г» ГіГўГҐГ°ГҐГ­Г», Г·ГІГ® ГµГ®ГІГЁГІГҐ ГЇГҐГ°ГҐГ§Г ГЇГіГ±ГІГЁГІГј ГЄГ®Г¬ГЇГјГѕГІГҐГ°?"
+    ABOUTTEXT               "Windows PE ГЏГ®Г«ГјГ§Г®ГўГ ГІГҐГ«ГјГ±ГЄГЁГҐ Г®ГЎГ®Г«Г®Г·ГЄГЁ, Г‚ГҐГ°Г±ГЁГї 2.0\r\nВ© 2021 PCRepairTech. Г‚Г±ГҐ ГЇГ°Г ГўГ  Г§Г Г°ГҐГ§ГҐГ°ГўГЁГ°Г®ГўГ Г­Г»."
+    ABOUTTITLE              "ГЋ Windows PE ГЏГ®Г«ГјГ§Г®ГўГ ГІГҐГ«ГјГ±ГЄГЁГҐ Г®ГЎГ®Г«Г®Г·ГЄГЁ"
 END
 
 STRINGTABLE
@@ -128,7 +128,7 @@ BEGIN
             VALUE "FileDescription", "Windows Preinstallation Environment Custom Shell"
             VALUE "FileVersion", "2.0.0.5"
             VALUE "InternalName", "wpeshell.exe"
-            VALUE "LegalCopyright", "Copyright © 2021 PCRepairTech. All rights reserved."
+            VALUE "LegalCopyright", "Copyright В© 2021 PCRepairTech. All rights reserved."
             VALUE "OriginalFilename", "wpeshell.exe"
             VALUE "ProductName", "For use on WinPE. Custom Shell developed by PCRepairTech, Israel"
             VALUE "ProductVersion", "2.0.0.5"
@@ -148,7 +148,7 @@ END
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDI_FILEMANAGER         ICON                    "C:\\icon.ico"
+IDI_FILEMANAGER         ICON                    "icon.ico"
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -169,7 +169,7 @@ BEGIN
     APPTITLE                "Windows PE Custom Shell"
     CANNOTCLOSE             "Cannot exit main program while in WinPE!"
     RESTARTCONFIRMATION     "Are you sure you want to restart your computer?"
-    ABOUTTEXT               "Windows PE Custom Shell, Version 2.0\r\n© 2021 PCRepairTech. All rights reserved."
+    ABOUTTEXT               "Windows PE Custom Shell, Version 2.0\r\nВ© 2021 PCRepairTech. All rights reserved."
     ABOUTTITLE              "About Windows PE Custom Shell"
 END
 
@@ -196,16 +196,16 @@ LANGUAGE LANG_HEBREW, SUBLANG_NEUTRAL
 
 IDR_MAINMENU MENUEX
 BEGIN
-    POPUP "дъзм",                           65535,MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    POPUP "Г¤ГєГ§Г¬",                           65535,MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
     BEGIN
-        MENUITEM "фъз 7-Zip",                   ID_7ZIP,MFT_STRING,MFS_ENABLED
-        MENUITEM "фъз щшеъ фчегд",              ID_CMDOPEN,MFT_STRING,MFS_ENABLED
+        MENUITEM "ГґГєГ§ 7-Zip",                   ID_7ZIP,MFT_STRING,MFS_ENABLED
+        MENUITEM "ГґГєГ§ Г№ГёГҐГє ГґГ·ГҐГЈГ¤",              ID_CMDOPEN,MFT_STRING,MFS_ENABLED
         MENUITEM MFT_SEPARATOR
-        MENUITEM "дфтм озгщ",                   ID_RESTART,MFT_STRING,MFS_ENABLED
+        MENUITEM "Г¤ГґГІГ¬ Г®Г§ГЈГ№",                   ID_RESTART,MFT_STRING,MFS_ENABLED
     END
-    POPUP "тжшд",                           65535,MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    POPUP "ГІГ¦ГёГ¤",                           65535,MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
     BEGIN
-        MENUITEM "аегеъ",                       ID_ABOUT,MFT_STRING,MFS_ENABLED
+        MENUITEM "Г ГҐГЈГҐГє",                       ID_ABOUT,MFT_STRING,MFS_ENABLED
     END
 END
 
@@ -217,11 +217,11 @@ END
 
 STRINGTABLE
 BEGIN
-    APPTITLE                "Windows PE отифъ оеъаоъ айщйъ"
-    CANNOTCLOSE             "ай афщш мцаъ оъелрд шащйъ лащш б-WinPE!"
-    RESTARTCONFIRMATION     "дан аъд биез щбшцерк мдфтйм озгщ аъ дозщб?"
-    ABOUTTEXT               "Windows PE отифъ оеъаоъ айщйъ, вйшсд 2.0\r\n© 2021 PCRepairTech. лм джлейеъ щоешеъ."
-    ABOUTTITLE              "аегеъ Windows PE отифъ оеъаоъ айщйъ"
+    APPTITLE                "Windows PE Г®ГІГЁГґГє Г®ГҐГєГ Г®Гє Г Г©Г№Г©Гє"
+    CANNOTCLOSE             "Г Г© Г ГґГ№Гё Г¬Г¶Г Гє Г®ГєГҐГ«Г°Г¤ ГёГ Г№Г©Гє Г«Г Г№Гё ГЎ-WinPE!"
+    RESTARTCONFIRMATION     "Г¤Г Г­ Г ГєГ¤ ГЎГЁГҐГ§ Г№ГЎГёГ¶ГҐГ°ГЄ Г¬Г¤ГґГІГ©Г¬ Г®Г§ГЈГ№ Г Гє Г¤Г®Г§Г№ГЎ?"
+    ABOUTTEXT               "Windows PE Г®ГІГЁГґГє Г®ГҐГєГ Г®Гє Г Г©Г№Г©Гє, ГўГ©ГёГ±Г¤ 2.0\r\nВ© 2021 PCRepairTech. Г«Г¬ Г¤Г¦Г«ГҐГ©ГҐГє Г№Г®ГҐГёГҐГє."
+    ABOUTTITLE              "Г ГҐГЈГҐГє Windows PE Г®ГІГЁГґГє Г®ГҐГєГ Г®Гє Г Г©Г№Г©Гє"
 END
 
 STRINGTABLE
@@ -283,16 +283,16 @@ LANGUAGE LANG_ARABIC, SUBLANG_NEUTRAL
 
 IDR_MAINMENU MENUEX
 BEGIN
-    POPUP "ИПБ",                            65535,MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    POPUP "Г€ГЏГЃ",                            65535,MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
     BEGIN
-        MENUITEM "гЭКжН 7-Zip",                 ID_7ZIP,MFT_STRING,MFS_ENABLED
-        MENUITEM "ЭКН гжМе ЗбГжЗгС",            ID_CMDOPEN,MFT_STRING,MFS_ENABLED
+        MENUITEM "ГЈГќГЉГ¦ГЌ 7-Zip",                 ID_7ZIP,MFT_STRING,MFS_ENABLED
+        MENUITEM "ГќГЉГЌ ГЈГ¦ГЊГҐ Г‡ГЎГѓГ¦Г‡ГЈГ‘",            ID_CMDOPEN,MFT_STRING,MFS_ENABLED
         MENUITEM MFT_SEPARATOR
-        MENUITEM "ЗЪЗПе КФЫнб",                 ID_RESTART,MFT_STRING,MFS_ENABLED
+        MENUITEM "Г‡ГљГ‡ГЏГҐ ГЉГ”Г›Г­ГЎ",                 ID_RESTART,MFT_STRING,MFS_ENABLED
     END
-    POPUP "КЪбнгЗК",                        65535,MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    POPUP "ГЉГљГЎГ­ГЈГ‡ГЉ",                        65535,MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
     BEGIN
-        MENUITEM "Ъд",                          ID_ABOUT,MFT_STRING,MFS_ENABLED
+        MENUITEM "ГљГ¤",                          ID_ABOUT,MFT_STRING,MFS_ENABLED
     END
 END
 
@@ -304,11 +304,11 @@ END
 
 STRINGTABLE
 BEGIN
-    APPTITLE                "Windows PE гОХХ Фб"
-    CANNOTCLOSE             "бЗ нгЯд ЕдеЗБ ЗбИСдЗгМ ЗбСЖнУн ГЛдЗБ жМжПе Эн WinPE!"
-    RESTARTCONFIRMATION     "еб КСнП ИЗбКГЯнП ЕЪЗПЙ КФЫнб ЗбЯгИнжКСї?"
-    ABOUTTEXT               "Windows PE гОХХ Фб, ЗбЕХПЗС 2.0\r\n© 2021 PCRepairTech. МгнЪ ЗбНЮжЮ гНЭжЩЙ."
-    ABOUTTITLE              "Ъд Windows PE гОХХ Фб"
+    APPTITLE                "Windows PE ГЈГЋГ•Г• Г”ГЎ"
+    CANNOTCLOSE             "ГЎГ‡ Г­ГЈГџГ¤ Г…Г¤ГҐГ‡ГЃ Г‡ГЎГ€Г‘Г¤Г‡ГЈГЊ Г‡ГЎГ‘Г†Г­Г“Г­ ГѓГ‹Г¤Г‡ГЃ Г¦ГЊГ¦ГЏГҐ ГќГ­ WinPE!"
+    RESTARTCONFIRMATION     "ГҐГЎ ГЉГ‘Г­ГЏ Г€Г‡ГЎГЉГѓГџГ­ГЏ Г…ГљГ‡ГЏГ‰ ГЉГ”Г›Г­ГЎ Г‡ГЎГџГЈГ€Г­Г¦ГЉГ‘Вї?"
+    ABOUTTEXT               "Windows PE ГЈГЋГ•Г• Г”ГЎ, Г‡ГЎГ…Г•ГЏГ‡Г‘ 2.0\r\nВ© 2021 PCRepairTech. ГЊГЈГ­Гљ Г‡ГЎГЌГћГ¦Гћ ГЈГЌГќГ¦Г™Г‰."
+    ABOUTTITLE              "ГљГ¤ Windows PE ГЈГЋГ•Г• Г”ГЎ"
 END
 
 STRINGTABLE
